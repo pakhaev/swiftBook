@@ -14,7 +14,7 @@ import UIKit
 let pi: Float = 3.14
 let number: Float = 42.0
 
-let resultAddition = Double(pi + number) //Преобразование таким образом выдает более точный результат
+let resultAddition = Double(pi + number)
 
 print(resultAddition)
 

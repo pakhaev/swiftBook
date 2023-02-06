@@ -83,18 +83,16 @@ let resultOfSeconds = resultOfBirthDay * 24 * 60 * 60
 
 print("\(resultOfBirthYear) years, \(resultOfBirthMonth) months, \(resultOfBirthDay) days and \(resultOfSeconds) seonds have passed since my birth")
 
-if monthOfBirth >= 0 && monthOfBirth <= 12 {
-    if monthOfBirth <= 3 {
-        print("Я родился в первом квартале")
-    } else if monthOfBirth <= 6 {
-        print ("Я родился во втором квартале")
-    } else if monthOfBirth <= 9 {
-        print ("Я родился в третьем квартале")
-    } else {
-        print ("Я родился в четвертом квартале")
-    }
-} else {
+if monthOfBirth <= 0 && monthOfBirth > 13 {
     print("Значение должно быть от 0 до 12")
+} else if monthOfBirth <= 3 {
+    print("Я родился в первом квартале")
+} else if monthOfBirth <= 6 {
+    print ("Я родился во втором квартале")
+} else if monthOfBirth <= 9 {
+    print ("Я родился в третьем квартале")
+} else {
+    print ("Я родился в четвертом квартале")
 }
 
 print("\n-------------------------------\n")
@@ -104,6 +102,5 @@ print("\n-------------------------------\n")
  > Подсказка: в результате должно получиться 0.841
  */
 
-let sinOfOne = String(format:"%.3f", sin(1.0))
-print(sinOfOne)
-
+let sinOne = sin(1.0)
+print(String(format:"%.3f", sinOne))

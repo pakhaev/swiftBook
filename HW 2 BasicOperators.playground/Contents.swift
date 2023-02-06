@@ -64,6 +64,7 @@ print("\n-------------------------------\n")
 let dayOfBirth = 14
 let monthOfBirth = 12
 let yearOfBirth = 1998
+
 let nowDay = 3
 let nowMonth = 2
 let nowYear = 2023
